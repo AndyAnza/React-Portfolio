@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AndyAnza/React-Portfolio/issues"
   },
-  "homepage": "https://github.com/AndyAnza/React-Portfolio#readme"
+  "homepage": "https://github.com/AndyAnza/React-Portfolio#readme",
+  "devDependencies": {
+    "vite": "^4.3.9"
+  }
 }
