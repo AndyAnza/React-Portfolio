@@ -1,6 +1,7 @@
 import React from "react";
 import profinder from "../assets/profinder.png";
 import localeats from "../assets/localeats.png";
+import techblog from "../assets/techblog.png";
 
 const projects = [
   {
@@ -18,11 +19,11 @@ const projects = [
     repo: "https://github.com/AndyAnza/localeats",
   },
   {
-    name: "ProFinder",
-    url: "https://example.com/profinder",
-    img: "profinder-image.jpg",
+    name: "Tech-Blog",
+    url: "https://devblog.herokuapp.com/",
+    img: techblog,
     description: "Project description for ProFinder",
-    repo: "https://github.com/AndyAnza/profinder",
+    repo: "https://github.com/AndyAnza/Tech-Blog-C16",
   },
   {
     name: "Project 2",
@@ -37,30 +38,28 @@ const Card = () => {
   return (
     <div>
       <h2
-        className="text-4xl font-bold tracking-tight text-white sm:text-6xl  mx-auto max-w-7xl px-6 lg:px-8 mb-10 mt-40"
+        className="text-4xl font-bold tracking-tight sm:text-6xl mx-auto max-w-7xl px-6 lg:px-8 mb-10 mt-10 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent"
         id="portfolio"
-        style={{
-          background: "linear-gradient(to right, #ff00cc, #333399)",
-          backgroundClip: "text",
-          WebkitBackgroundClip: "text",
-          color: "transparent",
-        }}
       >
         Projects
       </h2>
 
-      <div className="grid grid-cols-2 gap-4 mx-auto  max-w-7xl px-6 lg:px-8 mb-10">
+      <div
+        className="grid grid-cols-2 gap-12 mx-auto max-w-6xl lg:px-10"
+        id="card-gallery-container"
+      >
         {projects.map((project, index) => (
           <div
             key={index}
-            className="mx-auto w-96 h-96 bg-white rounded-lg overflow-hidden shadow-lg"
+            className="bg-white rounded-lg overflow-hidden shadow-lg w-full h-96"
+            id="card"
           >
             <div className="relative">
               <a href={project.url}>
                 <img
-                  className="w-full h-full object-cover"
                   src={project.img}
                   alt="Background"
+                  className="w-full h-64 object-cover"
                 />
               </a>
               <div className="absolute inset-0 bg-black opacity-25"></div>
