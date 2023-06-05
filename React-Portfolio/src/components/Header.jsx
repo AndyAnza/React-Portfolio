@@ -37,8 +37,8 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <a href="/" className="text-white text-4xl text-">
-              ANDREA<span>ANZA</span>
+            <a href="/" className="text-white text-4xl hover:text-purple-500">
+              ANDREA<span className="hover:text-pink-500">ANZA</span>
             </a>
           </a>
         </div>
@@ -55,19 +55,19 @@ export default function Header() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <a
             href="/portfolio"
-            className="text-sm font-semibold leading-6 text-white"
+            className="text-sm font-semibold leading-6 text-white hover:text-red-500"
           >
             Portfolio
           </a>
           <a
             href="https://drive.google.com/uc?export=download&id=174GsOGSwTJ43M22tNFZVkICUrehKfaKq"
-            className="text-sm font-semibold leading-6 text-white"
+            className="text-sm font-semibold leading-6 text-white hover:text-red-500"
           >
             Resume
           </a>
           <a
             href="/contact"
-            className="text-sm font-semibold leading-6 text-white"
+            className="text-sm font-semibold leading-6 text-white hover:text-red-500"
           >
             Contact
           </a>
