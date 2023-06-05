@@ -39,6 +39,12 @@ const Card = () => {
       <h2
         className="text-4xl font-bold tracking-tight text-white sm:text-6xl  mx-auto max-w-7xl px-6 lg:px-8 mb-10 mt-40"
         id="portfolio"
+        style={{
+          background: "linear-gradient(to right, #ff00cc, #333399)",
+          backgroundClip: "text",
+          WebkitBackgroundClip: "text",
+          color: "transparent",
+        }}
       >
         Projects
       </h2>

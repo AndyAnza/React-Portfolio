@@ -54,32 +54,24 @@ export default function Header() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <a
-            href="#about-me"
-            className="text-sm font-semibold leading-6 text-white"
-          >
-            About Me
-          </a>
-          <a
-            href="#portfolio"
+            href="/portfolio"
             className="text-sm font-semibold leading-6 text-white"
           >
             Portfolio
           </a>
           <a
-            href="#contact"
+            href="/resume"
             className="text-sm font-semibold leading-6 text-white"
           >
             Resume
           </a>
-        </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="/contact"
             className="text-sm font-semibold leading-6 text-white"
           >
-            Contact me <span aria-hidden="true">&rarr;</span>
+            Contact
           </a>
-        </div>
+        </Popover.Group>
       </nav>
       <Dialog
         as="div"

@@ -1,17 +1,18 @@
 import React from "react";
 import "./index.css";
 import "./App.css";
-import AboutMe from "./components/AboutMe.jsx";
-import Header from "./components/Header.jsx";
-import Projects from "./components/Projects.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
-    <>
-      <Header />
-      <AboutMe />
-      <Projects />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Routes>
+    </Router>
   );
 }
 

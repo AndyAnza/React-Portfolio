@@ -20,5 +20,8 @@
   "homepage": "https://github.com/AndyAnza/React-Portfolio#readme",
   "devDependencies": {
     "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.11.2"
   }
 }
