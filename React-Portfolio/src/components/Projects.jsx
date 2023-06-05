@@ -38,11 +38,17 @@ const Card = () => {
   return (
     <div>
       <h2
-        className="text-4xl font-bold tracking-tight sm:text-6xl mx-auto max-w-7xl px-6 lg:px-8 mb-10 mt-10 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent"
+        className="text-4xl font-bold tracking-tight sm:text-6xl mx-auto max-w-7xl px-6 lg:px-8 mb-2 mt-10 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent"
         id="portfolio"
       >
         Projects
       </h2>
+      <p className="text-white sm:text-2xl mx-auto max-w-7xl px-6 lg:px-8 mb-10">
+        Check out all the projects I've been working on on my{" "}
+        <a href="https://github.com/AndyAnza" className="text-white">
+          Github Page
+        </a>
+      </p>
 
       <div
         className="grid grid-cols-2 gap-12 mx-auto max-w-6xl lg:px-10"

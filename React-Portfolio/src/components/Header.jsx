@@ -60,7 +60,7 @@ export default function Header() {
             Portfolio
           </a>
           <a
-            href="/resume"
+            href="https://drive.google.com/uc?export=download&id=174GsOGSwTJ43M22tNFZVkICUrehKfaKq"
             className="text-sm font-semibold leading-6 text-white"
           >
             Resume
