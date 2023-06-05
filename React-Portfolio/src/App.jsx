@@ -1,15 +1,16 @@
 import React from "react";
 import "./index.css";
+import "./App.css";
 import AboutMe from "./components/AboutMe.jsx";
 import Header from "./components/Header.jsx";
-// import Proyects from "./components/Proyects.jsx";
+import Projects from "./components/Projects.jsx";
 
 function App() {
   return (
     <>
       <Header />
       <AboutMe />
-      {/* <Proyects /> */}
+      <Projects />
     </>
   );
 }

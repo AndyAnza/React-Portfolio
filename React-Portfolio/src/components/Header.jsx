@@ -29,7 +29,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white">
+    <header className="bg-black">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -37,11 +37,9 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            />
+            <a href="/" className="text-white text-4xl text-">
+              ANDREA<span>ANZA</span>
+            </a>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -57,25 +55,28 @@ export default function Header() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <a
             href="#about-me"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-sm font-semibold leading-6 text-white"
           >
             About Me
           </a>
           <a
             href="#portfolio"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-sm font-semibold leading-6 text-white"
           >
             Portfolio
           </a>
           <a
             href="#contact"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-sm font-semibold leading-6 text-white"
           >
             Resume
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a
+            href="/contact"
+            className="text-sm font-semibold leading-6 text-white"
+          >
             Contact me <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
