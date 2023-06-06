@@ -38,7 +38,7 @@ export default function Header() {
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <a href="/" className="text-white text-4xl hover:text-purple-500">
-              ANDREA<span className="hover:text-pink-500">ANZA</span>
+              ANDREA<span className="">ANZA</span>
             </a>
           </a>
         </div>
@@ -103,19 +103,19 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="#about-me"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About me
                 </a>
                 <a
-                  href="#portfolio"
+                  href="/portfolio"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Portfolio
                 </a>
                 <a
-                  href="#resume"
+                  href="/resume"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Resume
@@ -123,7 +123,7 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <a
-                  href="#contact-me"
+                  href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact me

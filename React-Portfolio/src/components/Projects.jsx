@@ -43,7 +43,7 @@ const Card = () => {
       >
         Projects
       </h2>
-      <p className="text-white sm:text-2xl mx-auto max-w-7xl px-6 lg:px-8 mb-10">
+      <p className="text-gray-300 sm:text-lg mx-auto max-w-7xl px-6 lg:px-8 mb-10">
         Check out all the projects I've been working on on my{" "}
         <a href="https://github.com/AndyAnza" className="text-white">
           Github Page
@@ -57,15 +57,15 @@ const Card = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg overflow-hidden shadow-lg w-full h-96"
+            className="bg-white rounded-lg overflow-hidden shadow-lg w-full h-64"
             id="card"
           >
             <div className="relative">
-              <a href={project.url}>
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <img
                   src={project.img}
                   alt="Background"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-cover cursor-pointer"
                 />
               </a>
               <div className="absolute inset-0 bg-black opacity-25"></div>
