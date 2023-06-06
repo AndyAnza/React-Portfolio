@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../React-Portfolio/index.html"));
+  res.sendFile(path.join(__dirname, "../React-Portfolio/dist/index.html"));
 });
 
 app.listen(port, () => {
