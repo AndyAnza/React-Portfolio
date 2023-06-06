@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "cd React-Portfolio && npm run build & cd .. && node server",
-    "dev": "cd React-Portfolio && npm run dev"
+    "start": "npm run build && node server",
+    "dev": "cd React-Portfolio && npm run dev",
+    "build": "cd React-Portfolio && npm run build"
   },
   "repository": {
     "type": "git",
