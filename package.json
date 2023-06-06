@@ -8,7 +8,7 @@
     "build": "react-scripts build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "npm run build && react-scripts start"
+    "start": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,6 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "react-router-dom": "^6.11.2",
-    "react-scripts": "^5.0.1"
+    "react-router-dom": "^6.11.2"
   }
 }
