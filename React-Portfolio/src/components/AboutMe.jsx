@@ -32,13 +32,17 @@ export default function AboutMe() {
               color: "transparent",
             }}
           >
-            Hi! I'm Andrea
+            Hi! I'm Andrea,
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            a passionate web developer with 5 years of experience. I specialize
-            in front-end development using HTML, CSS, and JavaScript. I'm always
-            excited to learn new technologies and create innovative web
-            solutions.
+            a certified full-stack web developer fresh out of a rigorous
+            bootcamp. With a passion for technology and a solid foundation in
+            front-end and back-end development, I specialize in creating
+            seamless and engaging web experiences. I thrive in fast-paced
+            environments, love collaborating with teams, and enjoy bringing
+            ideas to life. Explore my portfolio to see examples of my work, and
+            let's connect to discuss how we can create exceptional web solutions
+            together.
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
