@@ -55,7 +55,7 @@ const Card = () => {
       </p>
 
       <div
-        className="grid grid-cols-2 gap-12 mx-auto max-w-6xl lg:px-10"
+        className="grid grid-cols-1 sm:grid-cols-2 gap-12 mx-auto max-w-6xl lg:px-10"
         id="card-gallery-container"
       >
         {projects.map((project, index) => (

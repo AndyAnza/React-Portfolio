@@ -21,8 +21,8 @@ export default function AboutMe() {
   return (
     <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex items-center mx-auto max-w-6xl lg:mx-0">
-          <div className="">
+        <div className="flex flex-col sm:flex-row items-center mx-auto max-w-6xl lg:mx-0">
+          <div className="sm:w-2/3">
             <h2
               className="text-4xl font-bold tracking-tight text-white sm:text-6xl "
               id="about-me"
@@ -46,21 +46,25 @@ export default function AboutMe() {
               and let's connect to discuss how we can create exceptional web
               solutions together.
             </p>
+            <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+              {links.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="hover:text-red-600"
+                >
+                  {link.name} <span aria-hidden="true">&rarr;</span>
+                </a>
+              ))}
+            </div>
           </div>
-          <img src={ProfilePic} alt="Profile Picture" className="ml-4" />
+          <img
+            src={ProfilePic}
+            alt="Profile Picture"
+            className="ml-4 mt-8 sm:mt-0 sm:w-1/3"
+          />
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-            {links.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="hover:text-red-600"
-              >
-                {link.name} <span aria-hidden="true">&rarr;</span>
-              </a>
-            ))}
-          </div>
           <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {technologies.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse">
