@@ -2,35 +2,36 @@ import React from "react";
 import profinder from "../assets/profinder.png";
 import localeats from "../assets/localeats.png";
 import techblog from "../assets/techblog.png";
+import weatherforecast from "../assets/weatherforecast.png";
 
 const projects = [
   {
     name: "ProFinder",
     url: "https://profinder-dev.herokuapp.com",
     img: profinder,
-    description: "Project description for ProFinder",
+    description: "",
     repo: "https://github.com/AndyAnza/profinder",
   },
   {
     name: "localeats",
     url: "https://localeats.herokuapp.com/",
     img: localeats,
-    description: "Project description for Project 2",
+    description: "",
     repo: "https://github.com/AndyAnza/localeats",
   },
   {
     name: "Tech-Blog",
     url: "https://devblog.herokuapp.com/",
     img: techblog,
-    description: "Project description for ProFinder",
+    description: "",
     repo: "https://github.com/AndyAnza/Tech-Blog-C16",
   },
   {
-    name: "Project 2",
-    url: "https://example.com/project2",
-    img: "project2-image.jpg",
-    description: "Project description for Project 2",
-    repo: "https://github.com/AndyAnza/profinder",
+    name: "Weather-Forecast",
+    url: "https://andyanza.github.io/Weather-Forecast",
+    img: weatherforecast,
+    description: "",
+    repo: "https://github.com/AndyAnza/Weather-Forecast",
   },
 ];
 
@@ -45,7 +46,10 @@ const Card = () => {
       </h2>
       <p className="text-gray-300 sm:text-lg mx-auto max-w-7xl px-6 lg:px-8 mb-10">
         Check out all the projects I've been working on on my{" "}
-        <a href="https://github.com/AndyAnza" className="text-white">
+        <a
+          href="https://github.com/AndyAnza"
+          className="text-white hover:text-red-500"
+        >
           Github Page
         </a>
       </p>
@@ -57,24 +61,33 @@ const Card = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg overflow-hidden shadow-lg w-full h-64"
+            className="bg-white rounded-lg overflow-hidden shadow-lg w-full h-64 relative border border-neutral-600"
             id="card"
           >
-            <div className="relative">
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={project.img}
-                  alt="Background"
-                  className="w-full h-64 object-cover cursor-pointer"
-                />
+            <img
+              src={project.img}
+              alt="Background"
+              className="w-full h-64 object-cover cursor-pointer"
+            />
+            <div className="absolute bottom-0 w-full py-2 bg-black opacity-80 pl-2">
+              <h2 className="text-2xl font-bold text-white">{project.name}</h2>
+              <p className="mb-2 text-gray-200">{project.description}</p>
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-500 text-white py-1 px-4 rounded hover:bg-blue-600 mr-2"
+              >
+                Visit Website
               </a>
-              <div className="absolute inset-0 bg-black opacity-25"></div>
-              <div className="absolute bottom-0 px-6 py-4">
-                <h2 className="text-2xl font-bold text-white">
-                  {project.name}
-                </h2>
-                <p className="mt-2 text-gray-200">{project.description}</p>
-              </div>
+              <a
+                href={project.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-500 text-white py-1 px-4 rounded hover:bg-blue-600"
+              >
+                Github Repo
+              </a>
             </div>
           </div>
         ))}

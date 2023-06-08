@@ -1,4 +1,5 @@
 import React from "react";
+import ProfilePic from "../assets/profilepic.png";
 
 const links = [
   { name: "LinkedIn", href: "https://www.linkedin.com/in/andrearamirezanza/" },
@@ -20,30 +21,33 @@ export default function AboutMe() {
   return (
     <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2
-            className="text-4xl font-bold tracking-tight text-white sm:text-6xl "
-            id="about-me"
-            style={{
-              background:
-                "linear-gradient(to right, #5f3dc4, #9138b3, #d74391)",
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-            }}
-          >
-            Hi! I'm Andrea,
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-            a certified full-stack web developer fresh out of a rigorous
-            bootcamp. With a passion for technology and a solid foundation in
-            front-end and back-end development, I specialize in creating
-            seamless and engaging web experiences. I thrive in fast-paced
-            environments, love collaborating with teams, and enjoy bringing
-            ideas to life. Explore my portfolio to see examples of my work, and
-            let's connect to discuss how we can create exceptional web solutions
-            together.
-          </p>
+        <div className="flex items-center mx-auto max-w-6xl lg:mx-0">
+          <div className="">
+            <h2
+              className="text-4xl font-bold tracking-tight text-white sm:text-6xl "
+              id="about-me"
+              style={{
+                background:
+                  "linear-gradient(to right, #5f3dc4, #9138b3, #d74391)",
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+                color: "transparent",
+              }}
+            >
+              Hi! I'm Andrea,
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-300">
+              a certified full-stack web developer fresh out of a rigorous
+              bootcamp. With a passion for technology and a solid foundation in
+              front-end and back-end development, I specialize in creating
+              seamless and engaging web experiences. I thrive in fast-paced
+              environments, love collaborating with teams, and enjoy bringing
+              ideas to life. Explore my portfolio to see examples of my work,
+              and let's connect to discuss how we can create exceptional web
+              solutions together.
+            </p>
+          </div>
+          <img src={ProfilePic} alt="Profile Picture" className="ml-4" />
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
