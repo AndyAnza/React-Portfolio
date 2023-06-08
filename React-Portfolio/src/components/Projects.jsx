@@ -48,7 +48,7 @@ const Card = () => {
         Check out all the projects I've been working on on my{" "}
         <a
           href="https://github.com/AndyAnza"
-          className="text-white hover:text-red-500"
+          className="text-white transition duration-150 ease-in-out delay-75 hover:text-purple-500"
         >
           Github Page
         </a>
@@ -76,7 +76,7 @@ const Card = () => {
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white py-1 px-4 rounded hover:bg-blue-600 mr-2"
+                className="bg-purple-500 text-white py-1 px-4 rounded hover:bg-purple-600 mr-2"
               >
                 Visit Website
               </a>
@@ -84,7 +84,7 @@ const Card = () => {
                 href={project.repo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white py-1 px-4 rounded hover:bg-blue-600"
+                className="bg-purple-500 text-white py-1 px-4 rounded hover:bg-purple-600"
               >
                 Github Repo
               </a>

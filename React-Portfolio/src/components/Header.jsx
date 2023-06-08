@@ -25,7 +25,10 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <a href="/" className="text-white text-4xl hover:text-purple-500">
+            <a
+              href="/"
+              className="text-white text-4xl transition duration-150 ease-in-out delay-75 hover:text-purple-500"
+            >
               ANDREA<span className="font-semibold">ANZA</span>
             </a>
           </a>
@@ -43,19 +46,19 @@ export default function Header() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <a
             href="/portfolio"
-            className="text-sm font-semibold leading-6 text-white hover:text-red-500"
+            className="text-sm font-semibold leading-6 text-white transition duration-150 ease-in-out delay-75 hover:text-purple-500"
           >
             Portfolio
           </a>
           <a
             href="/resume"
-            className="text-sm font-semibold leading-6 text-white hover:text-red-500"
+            className="text-sm font-semibold leading-6 text-white transition duration-150 ease-in-out delay-75 hover:text-purple-500"
           >
             Resume
           </a>
           <a
             href="/contact"
-            className="text-sm font-semibold leading-6 text-white hover:text-red-500"
+            className="text-sm font-semibold leading-6 text-white transition duration-150 ease-in-out delay-75 hover:text-purple-500"
           >
             Contact
           </a>
@@ -90,19 +93,19 @@ export default function Header() {
               <div className="space-y-2 py-6">
                 <a
                   href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-red-500"
+                  className="transition duration-150 ease-in-out delay-75 hover:text-purple-500 -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white"
                 >
                   About me
                 </a>
                 <a
                   href="/portfolio"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-red-500"
+                  className="transition duration-150 ease-in-out delay-75 hover:text-purple-500 -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white"
                 >
                   Portfolio
                 </a>
                 <a
                   href="/resume"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-red-500"
+                  className="transition duration-150 ease-in-out delay-75 hover:text-purple-500 -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white"
                 >
                   Resume
                 </a>
@@ -110,7 +113,7 @@ export default function Header() {
               <div className="py-6">
                 <a
                   href="/contact"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:text-red-500"
+                  className="transition duration-150 ease-in-out delay-75 hover:text-purple-500 -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white"
                 >
                   Contact me
                 </a>

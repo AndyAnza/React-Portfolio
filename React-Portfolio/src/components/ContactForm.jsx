@@ -22,7 +22,7 @@ const ContactForm = () => {
         className="max-w-md mx-auto border-2 border-gradient-to-r-indigo from-indigo-500 via-purple-500 to-pink-500 p-4 rounded w-96"
       >
         <div className="mb-4">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          <h2 className="mb-4 text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Contact
           </h2>
           <label htmlFor="name" className="block mb-2 text-white">
@@ -61,7 +61,7 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+          className="bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600"
         >
           Submit
         </button>

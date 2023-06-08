@@ -46,12 +46,12 @@ export default function AboutMe() {
               and let's connect to discuss how we can create exceptional web
               solutions together.
             </p>
-            <div className="mt-10 grid grid-cols-3 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+            <div className="mt-10 grid grid-cols-3 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 sm:gap-x-4 sm:gap-y-4 md:flex lg:gap-x-10">
               {links.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="hover:text-red-600"
+                  className="transition duration-150 ease-in-out delay-75 hover:text-purple-500"
                 >
                   {link.name} <span aria-hidden="true">&rarr;</span>
                 </a>
