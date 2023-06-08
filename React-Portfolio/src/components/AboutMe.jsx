@@ -46,7 +46,7 @@ export default function AboutMe() {
               and let's connect to discuss how we can create exceptional web
               solutions together.
             </p>
-            <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+            <div className="mt-10 grid grid-cols-3 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
               {links.map((link) => (
                 <a
                   key={link.name}
@@ -64,8 +64,8 @@ export default function AboutMe() {
             className="ml-4 mt-8 sm:mt-0 sm:w-1/3"
           />
         </div>
-        <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none flex justify-center sm:block">
+          <dl className="mt-16 grid grid-cols-2 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {technologies.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse">
                 <dt className="text-base leading-7 text-gray-300">
