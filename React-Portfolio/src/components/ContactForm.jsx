@@ -15,9 +15,13 @@ const ContactForm = () => {
     setComments("");
   };
 
+  // const emailEndpoint = `https://formspree.io/${process.env.REACT_APP_EMAIL}`;
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 mt-20">
       <form
+        // action={emailEndpoint}
+        // method="POST"
         onSubmit={handleSubmit}
         className="max-w-md mx-auto border-2 border-gradient-to-r-indigo from-indigo-500 via-purple-500 to-pink-500 p-4 rounded w-96"
       >
