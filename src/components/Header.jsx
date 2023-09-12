@@ -1,13 +1,30 @@
-import React from "react";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
+const URLpathsProperties = [
+  {
+    name: "Portfolio",
+    path: "/portfolio",
+  },
+  {
+    name: "Skills",
+    path: "/skills",
+  },
+  {
+    name: "Resume",
+    path: "/resume",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+  },
 ];
+
+const CSSnavbar =
+  "text-lg font-semibold leading-6 text-white transition duration-150 ease-in-out delay-75 hover:text-purple-500";
+const CSSnavbarMobile =
+  "transition duration-150 ease-in-out delay-75 hover:text-purple-500 -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -19,7 +36,7 @@ export default function Header() {
   return (
     <header className="bg-black">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-8 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -43,25 +60,13 @@ export default function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
+
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a
-            href="/portfolio"
-            className="text-sm font-semibold leading-6 text-white transition duration-150 ease-in-out delay-75 hover:text-purple-500"
-          >
-            Portfolio
-          </a>
-          <a
-            href="/resume"
-            className="text-sm font-semibold leading-6 text-white transition duration-150 ease-in-out delay-75 hover:text-purple-500"
-          >
-            Resume
-          </a>
-          <a
-            href="/contact"
-            className="text-sm font-semibold leading-6 text-white transition duration-150 ease-in-out delay-75 hover:text-purple-500"
-          >
-            Contact
-          </a>
+          {URLpathsProperties.map((property) => (
+            <a key={property.path} href={property.path} className={CSSnavbar}>
+              {property.name}
+            </a>
+          ))}
         </Popover.Group>
       </nav>
       <Dialog
@@ -97,26 +102,15 @@ export default function Header() {
                 >
                   About me
                 </a>
-                <a
-                  href="/portfolio"
-                  className="transition duration-150 ease-in-out delay-75 hover:text-purple-500 -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white"
-                >
-                  Portfolio
-                </a>
-                <a
-                  href="/resume"
-                  className="transition duration-150 ease-in-out delay-75 hover:text-purple-500 -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white"
-                >
-                  Resume
-                </a>
-              </div>
-              <div className="py-6">
-                <a
-                  href="/contact"
-                  className="transition duration-150 ease-in-out delay-75 hover:text-purple-500 -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white"
-                >
-                  Contact me
-                </a>
+                {URLpathsProperties.map((property) => (
+                  <a
+                    key={property.path}
+                    href={property.path}
+                    className={CSSnavbarMobile}
+                  >
+                    {property.name}
+                  </a>
+                ))}
               </div>
             </div>
           </div>

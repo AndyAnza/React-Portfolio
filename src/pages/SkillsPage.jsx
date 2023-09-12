@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "../components/Header.jsx";
-import ContactCard from "../components/ContactCard.jsx";
+import Skills from "../components/Skills.jsx";
 
 const Contact = () => {
   return (
     <>
       <Header />
-      <ContactCard />
+      <Skills />
     </>
   );
 };
