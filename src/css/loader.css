@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25vmin;
+  height: 80vh;
 }
 
 .loader {
@@ -97,3 +97,44 @@
     background-color: transparent;
   }
 }
+
+/* CSS */
+.wipe-in-bottom-right {
+  animation: wipe-in-bottom-right 2.5s cubic-bezier(0.25, 1, 0.3, 1) both;
+}
+
+@keyframes wipe-in-bottom-right {
+  from {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 50%);
+  }
+  to {
+    clip-path: polygon(-50% 0%, 200% 0, 0 200%, 0 -50%);
+  }
+}
+
+.square-in-hesitate {
+  animation: square-in-hesitate 2.5s cubic-bezier(0.25, 1, 0.3, 1) both;
+}
+
+@keyframes square-in-hesitate {
+  0% {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+  40% {
+    clip-path: inset(33% 33% 33% 33%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+/* .hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  pointer-events: none;
+} */

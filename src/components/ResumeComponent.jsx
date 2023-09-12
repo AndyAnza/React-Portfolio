@@ -28,14 +28,16 @@ function ResumeComponent() {
         </div>
       ) : null}
 
-      <div className="flex justify-center py-6">
+      <div className={"flex justify-center py-6"}>
         <iframe
           src="https://drive.google.com/file/d/1XRB9Y1AZgoXQgVRrHEuvurnnMX2_4i7i/preview"
           width="70%"
           height="700"
           onLoad={() => setIframeLoaded(true)}
+          className={`${iframeLoaded ? "square-in-hesitate" : ""}`}
         ></iframe>
       </div>
+
       <div className="flex justify-center">
         <a
           data-text="Awesome"
