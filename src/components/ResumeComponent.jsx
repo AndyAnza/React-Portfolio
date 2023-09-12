@@ -1,19 +1,39 @@
-// import resumePDF from "../assets/AndreaAnzaResume.pdf";
 import "../css/aboutMe.css";
+import "../css/loader.css";
 import { ToastContainer, useToast } from "@rewind-ui/core";
+import { useState } from "react";
 
 function ResumeComponent() {
   const toast = useToast();
+  const [iframeLoaded, setIframeLoaded] = useState(false);
+
   return (
-    // <div className="flex justify-center">
-    //   <object data={resumePDF} width="1600" height="800"></object>
-    // </div>
     <div>
+      {!iframeLoaded ? (
+        <div className="loader-container">
+          <div className="loader">
+            <div className="cell d-0"></div>
+            <div className="cell d-1"></div>
+            <div className="cell d-2"></div>
+
+            <div className="cell d-1"></div>
+            <div className="cell d-2"></div>
+
+            <div className="cell d-2"></div>
+            <div className="cell d-3"></div>
+
+            <div className="cell d-3"></div>
+            <div className="cell d-4"></div>
+          </div>
+        </div>
+      ) : null}
+
       <div className="flex justify-center py-6">
         <iframe
           src="https://drive.google.com/file/d/1XRB9Y1AZgoXQgVRrHEuvurnnMX2_4i7i/preview"
           width="70%"
           height="700"
+          onLoad={() => setIframeLoaded(true)}
         ></iframe>
       </div>
       <div className="flex justify-center">

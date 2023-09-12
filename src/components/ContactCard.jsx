@@ -1,45 +1,23 @@
 import "../css/contact.css";
 import image from "../assets/contactIcons/image.gif";
-// import mail from "../assets/contactIcons/mail.png";
-// import twitter from "../assets/contactIcons/twitter.png";
-// import linkedin from "../assets/contactIcons/linkedin.png";
 
 const contactInfo = [
   {
     name: "Mail",
     url: "andrea.anza3@gmail.com",
-    // icon: mail,
   },
   {
     name: "Twitter",
     url: "https://twitter.com/AndyAnza",
-    // icon: twitter,
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/andrearamirezanza/",
-    // icon: linkedin,
   },
 ];
 
 function ContactCard() {
   return (
-    // <div>
-    //   <div classNameName="contact-card">
-    //     <div classNameName="contact-title-name">
-    //       <img src={image} alt="image"></img>
-    //       <h2>Full-Stack Web Developer</h2>
-    //       <h1>Andrea Anza</h1>
-    //     </div>
-    //     <div classNameName="contact-btn">
-    //       {contactInfo.map((property) => (
-    //         <a key={property.name} href={property.url}>
-    //           <img alt={property.name} src={property.icon} />
-    //         </a>
-    //       ))}
-    //     </div>
-    //   </div>
-    // </div>
     <div className="card">
       <b></b>
       <img src={image} alt="image"></img>
@@ -51,7 +29,7 @@ function ContactCard() {
         </p>
         <ul className="sci">
           <li>
-            <a href={contactInfo[0].url}>
+            <a href={`mailto:${contactInfo[0].url}`}>
               <svg
                 className="fa-brands fa-mail"
                 xmlns="http://www.w3.org/2000/svg"
