@@ -1,0 +1,52 @@
+@media (min-width: 1025px) {
+  .namePage {
+    font-size: 2.25rem; /* Equivalent to text-lg in Tailwind CSS */
+    line-height: 1.5; /* Equivalent to leading-6 in Tailwind CSS */
+    color: #ffffff; /* Equivalent to text-white in Tailwind CSS */
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 75ms;
+  }
+
+  .namePage span {
+    font-weight: 600;
+  }
+
+  /* Styles for laptops and desktops */
+  .namePage,
+  .navPages:hover {
+    color: #a855f7; /* Equivalent to hover:text-purple-500 in Tailwind CSS */
+  }
+  .navPages {
+    font-size: 1.125rem; /* Equivalent to text-lg in Tailwind CSS */
+    font-weight: 600; /* Equivalent to font-semibold in Tailwind CSS */
+    line-height: 1.5; /* Equivalent to leading-6 in Tailwind CSS */
+    color: #ffffff; /* Equivalent to text-white in Tailwind CSS */
+    transition-duration: 150ms; /* Equivalent to transition duration-150 in Tailwind CSS */
+    transition-timing-function: ease-in-out; /* Equivalent to ease-in-out in Tailwind CSS */
+    transition-delay: 75ms; /* Equivalent to delay-75 in Tailwind CSS */
+
+    /* Hover state */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for smartphones in portrait mode */
+  .namePage {
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 75ms;
+    color: #ffffff;
+    margin: 0 -0.75rem 0 -0.75rem; /* Equivalent to -mx-3 in Tailwind CSS */
+    display: block;
+    border-radius: 0.5rem; /* Equivalent to rounded-lg in Tailwind CSS */
+    padding: 0.625rem 0.75rem; /* Equivalent to py-2.5 in Tailwind CSS */
+    font-size: 1.5rem; /* Equivalent to text-base in Tailwind CSS */
+    font-weight: 600; /* Equivalent to font-semibold in Tailwind CSS */
+    line-height: 1.75; /* Equivalent to leading-7 in Tailwind CSS */
+  }
+  .namePage,
+  .navPages:hover {
+    color: #a855f7; /* Equivalent to hover:text-purple-500 in Tailwind CSS */
+  }
+}
