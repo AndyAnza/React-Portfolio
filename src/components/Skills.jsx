@@ -32,13 +32,12 @@ function Skills() {
       >
         My Tech Stack
       </h1>
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-4 sm:grid grid-cols-2">
         {technologies.map((property) => (
           <div key={property.name} className=" stack-btn">
             <img src={property.image} alt={property.image} />
-            <h3 className="text-2xl font-bold leading-9 tracking-tight ">
-              {property.name}
-            </h3>
+
+            <h3>{property.name}</h3>
           </div>
         ))}
       </div>
