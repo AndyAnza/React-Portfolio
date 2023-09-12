@@ -1,4 +1,3 @@
-import React from "react";
 import profinder from "../assets/profinder.png";
 import localeats from "../assets/localeats.png";
 import techblog from "../assets/techblog.png";

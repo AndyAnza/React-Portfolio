@@ -9,7 +9,7 @@ const links = [
 
 export default function AboutMe() {
   return (
-    <div className="py-24 sm:py-32">
+    <div className="about-me-container">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="about-me">
           <div className="sm:w-2/3">
@@ -26,7 +26,7 @@ export default function AboutMe() {
             >
               Hi! I'm Andrea,
             </h2>
-            <p className="mt-6  text-gray-300">
+            <p className=" text-gray-300">
               as a certified full-stack web developer, I thrive in fast-paced
               environments, love collaborating with teams, and specialize in
               creating seamless web experiences.
@@ -46,13 +46,6 @@ export default function AboutMe() {
                     &nbsp;{link.name}&nbsp;
                   </span>
                 </a>
-                // <a
-                //   key={link.name}
-                //   href={link.href}
-                //   className="about-me-links transition duration-150 ease-in-out delay-75 hover:text-purple-500"
-                // >
-                //   {link.name} <span aria-hidden="true">&rarr;</span>
-                // </a>
               ))}
             </div>
           </div>
