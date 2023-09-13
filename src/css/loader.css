@@ -98,19 +98,7 @@
   }
 }
 
-/* CSS */
-.wipe-in-bottom-right {
-  animation: wipe-in-bottom-right 2.5s cubic-bezier(0.25, 1, 0.3, 1) both;
-}
-
-@keyframes wipe-in-bottom-right {
-  from {
-    clip-path: polygon(0 0, 0 0, 0 0, 0 50%);
-  }
-  to {
-    clip-path: polygon(-50% 0%, 200% 0, 0 200%, 0 -50%);
-  }
-}
+/* Resume effect after loading */
 
 .square-in-hesitate {
   animation: square-in-hesitate 2.5s cubic-bezier(0.25, 1, 0.3, 1) both;
@@ -133,8 +121,24 @@
   transition: opacity 0.5s ease-in;
 }
 
-/* .hidden {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-  pointer-events: none;
-} */
+@media (max-width: 480px) {
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+
+  .loader {
+    --cell-size: 26px;
+    --cell-spacing: 1px;
+    --cells: 3;
+    --total-size: calc(
+      var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing))
+    );
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--total-size);
+    height: var(--total-size);
+  }
+}
