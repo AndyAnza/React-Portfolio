@@ -23,12 +23,17 @@
   /* Styles for laptops and desktops */
   .card-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
+  .card-container h2 {
+    display: block;
+    margin-bottom: 1rem;
+  }
   .card {
-    margin: 10vmin 80vmin;
+    margin: 0vmin 80vmin;
     padding: 0 5vmin 0 5vmin;
     position: relative;
     width: 40vh;

@@ -18,6 +18,7 @@
     color: #a855f7; /* Equivalent to hover:text-purple-500 in Tailwind CSS */
   }
   .navPages {
+    font-family: Oxanium, sans-serif;
     font-size: 1.125rem; /* Equivalent to text-lg in Tailwind CSS */
     font-weight: 600; /* Equivalent to font-semibold in Tailwind CSS */
     line-height: 1.5; /* Equivalent to leading-6 in Tailwind CSS */
