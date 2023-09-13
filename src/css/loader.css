@@ -141,4 +141,9 @@
     width: var(--total-size);
     height: var(--total-size);
   }
+
+  .toaster {
+    width: 45%;
+    height: 15%;
+  }
 }

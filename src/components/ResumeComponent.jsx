@@ -1,4 +1,5 @@
 import "../css/aboutMe.css";
+
 import "../css/loader.css";
 import "../css/resume.css";
 import { ToastContainer, useToast } from "@rewind-ui/core";
@@ -39,7 +40,7 @@ function ResumeComponent() {
             &nbsp;Download&nbsp;
           </span>
         </a>
-        <ToastContainer position="bottom-right" />
+        <ToastContainer position="bottom-right" className="toaster" />
       </div>
       {!iframeLoaded ? (
         <div className="loader-container">
