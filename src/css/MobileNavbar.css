@@ -1,0 +1,46 @@
+.mobile-container,
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+.mobile-navbar.open {
+  display: block;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+
+.open {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+@media (min-width: 1025px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-header {
+    display: block;
+  }
+}

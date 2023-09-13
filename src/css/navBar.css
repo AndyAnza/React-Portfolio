@@ -33,6 +33,9 @@
 
 @media (max-width: 480px) {
   /* Styles for smartphones in portrait mode */
+  .pc-navbar {
+    display: none;
+  }
   .namePage {
     transition-duration: 150ms;
     transition-timing-function: ease-in-out;
