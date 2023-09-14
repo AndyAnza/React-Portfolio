@@ -19,7 +19,7 @@ const contactInfo = [
 function ContactCard() {
   return (
     <div className="card-container">
-      <h2 className="text-4xl font-bold tracking-tight sm:text-6xl mx-auto max-w-7xl px-6 pb-6 lg:px-8 mb-2 mt-10 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent">{`Let's get in touch :-)`}</h2>
+      <h2 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent">{`Let's get in touch :-)`}</h2>
       <div className="card">
         <b></b>
         <img src={image} alt="image" className="gif-Card"></img>
