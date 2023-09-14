@@ -11,7 +11,7 @@ function ResumeComponent() {
 
   return (
     <div>
-      <div className="flex justify-center">
+      <div className="container-margin flex justify-center">
         <a
           data-text="Awesome"
           className="button"
