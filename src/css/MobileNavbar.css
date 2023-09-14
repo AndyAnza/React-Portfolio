@@ -4,8 +4,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  color: black;
+  color: white;
+}
+
+.mobile-container {
+  margin-top: 1.2em;
+}
+
+.home-path {
+  font-size: 1.2rem;
+}
+
+.home-path span {
+  font-weight: 600;
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-family: Oxanium, sans-serif;
+}
+.home-path:active,
+.toggle-button:active,
+.nav-links a:active {
+  color: #a855f7;
 }
 
 .mobile-navbar {
@@ -21,10 +42,6 @@
   border: none;
   font-size: 24px;
   cursor: pointer;
-}
-
-.nav-links li {
-  margin: 10px 0;
 }
 
 .open {

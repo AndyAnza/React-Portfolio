@@ -12,7 +12,9 @@ function MobileNavbar() {
     <>
       <header className="mobile-header">
         <div className="mobile-container">
-          <a href="/">AndreaAnza</a>
+          <a href="/" className="home-path">
+            ANDREA<span>ANZA</span>
+          </a>
           <button onClick={toggleHandler} className="toggle-button">
             ○○○
           </button>
