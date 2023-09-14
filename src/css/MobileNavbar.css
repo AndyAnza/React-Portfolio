@@ -50,13 +50,11 @@
   transition: opacity 0.3s ease;
 }
 
-@media (min-width: 1025px) {
-  .mobile-header {
-    display: none;
-  }
+.mobile-header {
+  display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .mobile-header {
     display: block;
   }

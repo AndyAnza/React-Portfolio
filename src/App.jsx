@@ -6,6 +6,7 @@ import Portfolio from "./pages/Portfolio";
 import SkillsPage from "./pages/SkillsPage";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/skills" element={<SkillsPage />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
   );
