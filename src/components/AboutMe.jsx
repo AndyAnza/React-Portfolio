@@ -23,14 +23,14 @@ export default function AboutMe() {
               color: "transparent",
             }}
           >
-            Hi! I'm Andrea,
+            {`Hi! I'm Andrea,`}
           </h2>
           <p className=" text-gray-300">
             as a certified full-stack web developer, I thrive in fast-paced
             environments, love collaborating with teams, and specialize in
             creating seamless web experiences.
             <br />
-            Explore my portfolio and let's connect to create web solutions.
+            {`Explore my portfolio and let's connect to create web solutions.`}
           </p>
           <div className="mt-10 grid grid-cols-3 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 sm:gap-x-4 sm:gap-y-4 md:flex lg:gap-x-10">
             {links.map((link) => (

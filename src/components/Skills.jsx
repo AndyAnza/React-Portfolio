@@ -25,14 +25,14 @@ const technologies = [
 
 function Skills() {
   return (
-    <div className="tech-stack">
+    <div className="tech-main-container">
       <h2
-        className="text-4xl font-bold tracking-tight sm:text-6xl mx-auto max-w-7xl px-6 pb-6 lg:px-8 mb-2 mt-10 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent"
+        className="lg: bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent"
         id="portfolio"
       >
         My Tech Stack
       </h2>
-      <div className="grid grid-cols-4">
+      <div className="tech-container grid grid-cols-4">
         {technologies.map((property) => (
           <div key={property.name} className=" stack-btn">
             <img src={property.image} alt={property.image} />

@@ -2,9 +2,9 @@
   display: block;
 }
 .namePage {
-  font-size: 2.25rem; /* Equivalent to text-lg in Tailwind CSS */
-  line-height: 1.5; /* Equivalent to leading-6 in Tailwind CSS */
-  color: #ffffff; /* Equivalent to text-white in Tailwind CSS */
+  font-size: 2.25rem;
+  line-height: 1.5;
+  color: #ffffff;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
   transition-delay: 75ms;
@@ -14,22 +14,19 @@
   font-weight: 600;
 }
 
-/* Styles for laptops and desktops */
 .namePage:hover,
 .navPages:hover {
-  color: #a855f7; /* Equivalent to hover:text-purple-500 in Tailwind CSS */
+  color: #a855f7;
 }
 .navPages {
   font-family: Oxanium, sans-serif;
-  font-size: 1.125rem; /* Equivalent to text-lg in Tailwind CSS */
-  font-weight: 600; /* Equivalent to font-semibold in Tailwind CSS */
-  line-height: 1.5; /* Equivalent to leading-6 in Tailwind CSS */
-  color: #ffffff; /* Equivalent to text-white in Tailwind CSS */
-  transition-duration: 150ms; /* Equivalent to transition duration-150 in Tailwind CSS */
-  transition-timing-function: ease-in-out; /* Equivalent to ease-in-out in Tailwind CSS */
-  transition-delay: 75ms; /* Equivalent to delay-75 in Tailwind CSS */
-
-  /* Hover state */
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 75ms;
 }
 
 @media (max-width: 768px) {
