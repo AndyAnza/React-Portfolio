@@ -99,7 +99,6 @@
 }
 
 /* Resume effect after loading */
-
 .square-in-hesitate {
   animation: square-in-hesitate 2.5s cubic-bezier(0.25, 1, 0.3, 1) both;
 }
@@ -123,27 +122,45 @@
 
 @media (max-width: 480px) {
   .loader-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 60vh;
   }
 
   .loader {
     --cell-size: 26px;
-    --cell-spacing: 1px;
-    --cells: 3;
-    --total-size: calc(
-      var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing))
-    );
-    display: flex;
-    flex-wrap: wrap;
-    width: var(--total-size);
-    height: var(--total-size);
   }
 
   .toaster {
     width: 45%;
     height: 15%;
+  }
+}
+
+@media (min-width: 768px) {
+  .loader-container {
+    height: 70vh;
+  }
+
+  .loader {
+    --cell-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .loader-container {
+    height: 50vh;
+  }
+
+  .loader {
+    --cell-size: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .loader-container {
+    height: 50vh;
+  }
+
+  .loader {
+    --cell-size: 45px;
   }
 }
