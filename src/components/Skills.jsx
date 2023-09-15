@@ -4,11 +4,13 @@ import css from "../assets/skillsIcons/css.png";
 import javascript from "../assets/skillsIcons/javascript.png";
 import node from "../assets/skillsIcons/node.png";
 import express from "../assets/skillsIcons/express.png";
-// import mongoose from "../assets/skillsIcons/mongoose.png";
 import react from "../assets/skillsIcons/react.png";
+import tailwind from "../assets/skillsIcons/tailwind.png";
+import bootstrap from "../assets/skillsIcons/bootstrap.png";
+import sql from "../assets/skillsIcons/sql.png";
+import mongoDB from "../assets/skillsIcons/mongoDB.png";
 import git from "../assets/skillsIcons/git.png";
 import windows from "../assets/skillsIcons/windows.png";
-import tailwind from "../assets/skillsIcons/tailwind.png";
 
 const technologies = [
   { name: "HTML", image: html },
@@ -16,11 +18,13 @@ const technologies = [
   { name: "JavaScript", image: javascript },
   { name: "Node.js", image: node },
   { name: "Express.js", image: express },
-  //   { name: "Mongoose", image: mongoose },
   { name: "React", image: react },
+  { name: "Tailwind", image: tailwind },
+  { name: "Bootstrap", image: bootstrap },
+  { name: "SQL", image: sql },
+  { name: "MongoDB", image: mongoDB },
   { name: "Git", image: git },
   { name: "Windows", image: windows },
-  { name: "Tailwind", image: tailwind },
 ];
 
 function Skills() {
