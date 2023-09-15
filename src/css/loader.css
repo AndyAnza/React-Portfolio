@@ -120,7 +120,7 @@
   transition: opacity 0.5s ease-in;
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .loader-container {
     height: 60vh;
   }
@@ -135,7 +135,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .loader-container {
     height: 70vh;
   }
@@ -145,7 +145,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .loader-container {
     height: 50vh;
   }
@@ -155,7 +155,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .loader-container {
     height: 50vh;
   }

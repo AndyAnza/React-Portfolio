@@ -11,7 +11,7 @@ iframe.hidden {
   margin: 1rem;
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* Styles for smartphones in portrait mode */
   .container-margin {
     margin-top: 1.5rem;

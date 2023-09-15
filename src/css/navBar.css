@@ -29,18 +29,7 @@
   transition-delay: 75ms;
 }
 
-@media (max-width: 768px) {
-  .pc-navbar {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Styles for smartphones in portrait mode */
-  .pc-navbar {
-    display: none;
-  }
-
+@media only screen and (max-width: 480px) {
   .namePage {
     transition-duration: 150ms;
     transition-timing-function: ease-in-out;
@@ -57,5 +46,11 @@
   .namePage,
   .navPages:hover {
     color: #a855f7;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pc-navbar {
+    display: none;
   }
 }
