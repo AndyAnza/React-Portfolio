@@ -2,6 +2,13 @@ import profinder from "../assets/projectsImages/profinder.png";
 import localeats from "../assets/projectsImages/localeats.png";
 import techblog from "../assets/projectsImages/techblog.png";
 import weatherforecast from "../assets/projectsImages/weatherforecast.png";
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 const projects = [
   {
@@ -36,7 +43,7 @@ const projects = [
 
 const Card = () => {
   return (
-    <div>
+    <>
       <h2
         className="text-4xl font-bold tracking-tight sm:text-6xl mx-auto max-w-7xl px-6 lg:px-8 mb-2 mt-10 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent"
         id="portfolio"
@@ -53,20 +60,30 @@ const Card = () => {
         </a>
       </p>
 
-      <div
-        className="grid grid-cols-1 sm:grid-cols-2 gap-12 mx-auto max-w-6xl lg:px-10"
-        id="card-gallery-container"
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
+        style={{
+          width: "80vh",
+          height: "60vh",
+          backgroundColor: "white",
+        }}
       >
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-lg overflow-hidden shadow-lg w-full h-64 relative border border-neutral-600"
-            id="card"
-          >
+          <SwiperSlide key={index} id="card">
             <img
               src={project.img}
               alt="Background"
-              className="w-full h-64 object-cover cursor-pointer"
+              style={{
+                objectFit: "fill",
+              }}
             />
             <div className="absolute bottom-0 w-full py-2 bg-black opacity-80 pl-2">
               <h2 className="text-2xl font-bold text-white">{project.name}</h2>
@@ -88,11 +105,72 @@ const Card = () => {
                 Github Repo
               </a>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
-    </div>
+      </Swiper>
+    </>
   );
 };
+
+// const Card2 = () => {
+//   return (
+//     <div>
+//       <h2
+//         className="text-4xl font-bold tracking-tight sm:text-6xl mx-auto max-w-7xl px-6 lg:px-8 mb-2 mt-10 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent"
+//         id="portfolio"
+//       >
+//         Projects
+//       </h2>
+//       <p className="text-gray-300 sm:text-lg mx-auto max-w-7xl px-6 lg:px-8 mb-10">
+//         Check out all the projects I've been working on on my{" "}
+//         <a
+//           href="https://github.com/AndyAnza"
+//           className="text-white transition duration-150 ease-in-out delay-75 hover:text-purple-500"
+//         >
+//           Github Page
+//         </a>
+//       </p>
+
+//       <div
+//         className="grid grid-cols-1 sm:grid-cols-2 gap-12 mx-auto max-w-6xl lg:px-10"
+//         id="card-gallery-container"
+//       >
+//         {projects.map((project, index) => (
+//           <div
+//             key={index}
+//             className="bg-white rounded-lg overflow-hidden shadow-lg w-full h-64 relative border border-neutral-600"
+//             id="card"
+//           >
+//             <img
+//               src={project.img}
+//               alt="Background"
+//               className="w-full h-64 object-cover cursor-pointer"
+//             />
+//             <div className="absolute bottom-0 w-full py-2 bg-black opacity-80 pl-2">
+//               <h2 className="text-2xl font-bold text-white">{project.name}</h2>
+//               <p className="mb-2 text-gray-200">{project.description}</p>
+//               <a
+//                 href={project.url}
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="bg-purple-500 text-white py-1 px-4 rounded hover:bg-purple-600 mr-2"
+//               >
+//                 Visit Website
+//               </a>
+//               <a
+//                 href={project.repo}
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="bg-purple-500 text-white py-1 px-4 rounded hover:bg-purple-600"
+//               >
+//                 Github Repo
+//               </a>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
 
 export default Card;
