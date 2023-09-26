@@ -3,7 +3,6 @@ import ProfilePic from "../assets/profilepic.png";
 
 const links = [
   { name: "LinkedIn", href: "https://www.linkedin.com/in/andrearamirezanza/" },
-  { name: "Instagram", href: "https://www.instagram.com/andyanza" },
   { name: "Github", href: "https://github.com/AndyAnza" },
 ];
 
