@@ -1,5 +1,5 @@
 import "../css/aboutMe.css";
-import ProfilePic from "../assets/profilepic.png";
+import ProfilePic from "../assets/profilePic/profilepic.png";
 
 const links = [
   { name: "LinkedIn", href: "https://www.linkedin.com/in/andrearamirezanza/" },

@@ -1,7 +1,7 @@
-import profinder from "../assets/profinder.png";
-import localeats from "../assets/localeats.png";
-import techblog from "../assets/techblog.png";
-import weatherforecast from "../assets/weatherforecast.png";
+import profinder from "../assets/projectsImages/profinder.png";
+import localeats from "../assets/projectsImages/localeats.png";
+import techblog from "../assets/projectsImages/techblog.png";
+import weatherforecast from "../assets/projectsImages/weatherforecast.png";
 
 const projects = [
   {
