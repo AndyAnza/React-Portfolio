@@ -16,6 +16,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import "../css/projects.css";
 
 const projects = [
   {
@@ -77,14 +78,11 @@ const projects = [
 
 const Cards = () => {
   return (
-    <>
-      <h2
-        className="text-4xl font-bold tracking-tight sm:text-6xl mx-auto max-w-7xl px-6 lg:px-8 mb-2 mt-10 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent"
-        id="portfolio"
-      >
+    <div className="projects-container">
+      <h2 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent">
         Projects
       </h2>
-      <p className="text-gray-300 sm:text-lg mx-auto max-w-7xl px-6 lg:px-8 mb-10">
+      <p className="text-gray-300 projects-description">
         Check out all the projects I've been working on on my{" "}
         <a
           href="https://github.com/AndyAnza"
@@ -106,13 +104,13 @@ const Cards = () => {
         onSlideChange={() => console.log("slide change")}
         style={{
           width: "80vh",
-          height: "60vh",
+          height: "55vh",
           backgroundColor: "black",
         }}
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index} id="card">
-            <Card>
+            <Card style={{ height: "55vh" }}>
               <CardMedia
                 component="img"
                 alt="project"
@@ -160,7 +158,7 @@ const Cards = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 };
 
