@@ -1,3 +1,8 @@
+.swiper {
+  width: 80vh;
+  height: 55vh;
+}
+
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -12,9 +17,99 @@
   margin: 1.5rem 0 1.5rem 0;
 }
 
+.projectCard {
+  height: 55vh;
+}
+
 .projects-description {
   position: relative;
   font-size: 2.6vmin;
   line-height: 32px;
   margin-bottom: 1%;
+}
+
+.cardMedia {
+  object-fit: cover;
+  height: 30vh;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .projects-container h2 {
+    font-size: 2rem;
+    margin: 0 0 0 0;
+  }
+
+  .projects-description {
+    font-size: 0.7rem;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .swiper {
+    width: 43vh;
+    height: 62vh;
+  }
+
+  .projectCard {
+    height: 62vh;
+  }
+
+  .cardMedia {
+    height: 18vh;
+  }
+
+  /* .projectTitle {
+    color: red;
+  } */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .projects-container h2 {
+    font-size: 2.25rem;
+  }
+
+  .projects-description {
+    font-size: 1.3rem;
+  }
+
+  .swiper {
+    width: 70vh;
+    height: 60vh;
+  }
+
+  .card {
+    height: 60vh;
+  }
+
+  .cardMedia {
+    height: 25vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .projects-container h2 {
+    font-size: 2.25rem;
+  }
+
+  .projects-description {
+    font-size: 1.5rem;
+  }
+
+  .cardMedia {
+    height: 27vh;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .projects-container h2 {
+    font-size: 3rem;
+  }
+
+  .projects-description {
+    font-size: 1.7rem;
+  }
+
+  .cardMedia {
+    height: 30vh;
+  }
 }

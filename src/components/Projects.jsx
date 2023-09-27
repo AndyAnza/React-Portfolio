@@ -102,31 +102,39 @@ const Cards = () => {
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
-        style={{
-          width: "80vh",
-          height: "55vh",
-          backgroundColor: "black",
-        }}
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index} id="card">
-            <Card style={{ height: "55vh" }}>
+            <Card className="projectCard">
               <CardMedia
                 component="img"
                 alt="project"
-                style={{ objectFit: "cover", height: "30vh" }}
+                className="cardMedia"
                 image={project.img}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  className="projectTitle"
+                >
                   {project.name}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  className="projectDescription"
+                >
                   {project.description}
                 </Typography>
-                <ul style={{ display: "flex", marginTop: "4px" }}>
-                  {" "}
-                  {`Technologies: `}
+                <ul
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    marginTop: "4px",
+                  }}
+                >
                   {project.technologies.map((technology, techIndex) => (
                     <li
                       style={{ fontSize: "0.9rem", marginRight: "0.5rem" }}
