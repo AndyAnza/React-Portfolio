@@ -14,6 +14,7 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 const projects = [
@@ -106,17 +107,16 @@ const Cards = () => {
         style={{
           width: "80vh",
           height: "60vh",
-          backgroundColor: "white",
-          // margin: "0 40px 0 40px",
+          backgroundColor: "black",
         }}
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index} id="card">
-            <Card style={{ width: "80vh", height: "60vh" }}>
+            <Card>
               <CardMedia
                 component="img"
                 alt="project"
-                style={{ objectFit: "cover", height: "35vh" }}
+                style={{ objectFit: "cover", height: "30vh" }}
                 image={project.img}
               />
               <CardContent>
@@ -140,22 +140,21 @@ const Cards = () => {
                 </ul>
               </CardContent>
               <CardActions>
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-purple-500 text-white py-1 px-4 rounded hover:bg-purple-600 mr-2"
+                <Button
+                  size="small"
+                  onClick={() => {
+                    window.location.href = project.url;
+                  }}
                 >
                   Visit Website
-                </a>
-                <a
-                  href={project.repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-purple-500 text-white py-1 px-4 rounded hover:bg-purple-600"
+                </Button>
+                <Button
+                  onClick={() => {
+                    window.location.href = project.repo;
+                  }}
                 >
                   Github Repo
-                </a>
+                </Button>
               </CardActions>
             </Card>
           </SwiperSlide>
