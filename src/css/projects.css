@@ -40,9 +40,11 @@
   }
 
   .projects-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 20px;
     text-align: center;
+    width: 90%;
+    margin-bottom: 14px;
   }
 
   .swiper {
@@ -57,46 +59,53 @@
   .cardMedia {
     height: 18vh;
   }
-
-  /* .projectTitle {
-    color: red;
-  } */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .projects-container h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
+    margin: 0 0 0 0;
   }
 
   .projects-description {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .swiper {
     width: 70vh;
-    height: 60vh;
+    height: 55vh;
   }
 
   .card {
-    height: 60vh;
+    height: 55vh;
   }
 
   .cardMedia {
-    height: 25vh;
+    height: 20vh;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .projects-container h2 {
-    font-size: 2.25rem;
+    font-size: 2.1rem;
+    margin: 0 0 0 0;
   }
 
   .projects-description {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .swiper {
+    width: 70vh;
+    height: 52vh;
+  }
+
+  .card {
+    height: 52vh;
   }
 
   .cardMedia {
-    height: 27vh;
+    height: 18vh;
   }
 }
 
@@ -106,7 +115,16 @@
   }
 
   .projects-description {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+  }
+
+  .swiper {
+    width: 70vh;
+    height: 56vh;
+  }
+
+  .card {
+    height: 56vh;
   }
 
   .cardMedia {
