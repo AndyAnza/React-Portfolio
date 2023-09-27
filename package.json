@@ -36,11 +36,16 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "@mui/material": "^5.14.11",
     "@rewind-ui/core": "^0.15.0",
     "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.4.14",
+    "framer-motion": "^10.16.4",
     "react": "^ 18.2.0",
     "react-dom": "^ 18.2.0",
     "react-router-dom": "^6.1.1",
