@@ -40,18 +40,18 @@
   }
 
   .projects-description {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     line-height: 20px;
     text-align: center;
   }
 
   .swiper {
     width: 43vh;
-    height: 62vh;
+    height: 64vh;
   }
 
   .projectCard {
-    height: 62vh;
+    height: 64vh;
   }
 
   .cardMedia {
