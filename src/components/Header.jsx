@@ -22,14 +22,14 @@ const URLpathsProperties = [
 export default function Header() {
   return (
     <header className="pc-navbar">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-8 lg:px-8">
+      <nav className="navBar">
         <div>
           <a href="/" className="namePage">
             ANDREA<span className="font-semibold">ANZA</span>
           </a>
         </div>
 
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div>
           {URLpathsProperties.map((property) => (
             <a key={property.path} href={property.path} className="navPages">
               {property.name}
