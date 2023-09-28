@@ -3,13 +3,13 @@
 }
 
 .navBar {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  width: 80vw;
-  height: 12vh;
   align-items: center;
   justify-content: space-between;
+  width: 80vw;
+  height: 12vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 .namePage {
   font-size: 2.25rem;
@@ -41,7 +41,7 @@
   padding: 0 2rem 0 0;
 }
 
-/*Doesn't show  navbar for smartphones*/
+/*Doesn't show  PCnavbar for smartphones*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .pc-navbar {
     display: none;

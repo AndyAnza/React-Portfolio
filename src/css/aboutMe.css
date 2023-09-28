@@ -1,106 +1,78 @@
-.about-me-container {
+.contentCard {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
-  margin: 0% 10% 0% 10%;
+  margin-top: 18vmin;
 }
 
-.about-me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.textWrapper {
+  width: 38vw;
 }
-.about-me p {
-  position: relative;
+
+.titleh2 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: white;
+}
+.textWrapper p {
   font-size: 2.6vmin;
   line-height: 32px;
-  margin-top: 2%;
-}
-.button {
-  margin: 0;
-  height: auto;
-  background: transparent;
-  padding: 0;
-  border: none;
+  margin-bottom: 2%;
 }
 
-.button {
-  --border-right: 6px;
-  --text-stroke-color: rgba(255, 255, 255, 0.6);
-  --animation-color: #37ff8b;
-  --fs-size: 1.5em;
-  letter-spacing: 3px;
-  text-decoration: none;
-  font-size: var(--fs-size);
-  font-family: "Arial";
-  position: relative;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-/* this is the text, when you hover on button */
-.hover-text {
-  position: absolute;
-  box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
-  width: 0%;
-  inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
-  overflow: hidden;
-  transition: 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
-}
-/* hover */
-.button:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color));
-}
-
-@media only screen and (max-width: 480px) {
-  /* Styles for smartphones in portrait mode */
-  .about-me {
-    flex-wrap: wrap-reverse;
+/*Smartphones*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .contentCard {
+    flex-direction: column-reverse;
+    margin-top: 0;
   }
 
-  .about-me p {
-    position: relative;
+  .textWrapper {
+    width: 75vw;
+  }
+
+  .titleh2 {
+    font-size: 2rem;
+  }
+  .textWrapper p {
     font-size: 4vmin;
-    line-height: 27px;
-  }
-
-  /* === removing default button style ===*/
-
-  /* button styling */
-  .button {
-    --fs-size: 0.8em;
-    letter-spacing: 3px;
-    text-decoration: none;
-    font-size: var(--fs-size);
-  }
-  /* this is the text, when you hover on button */
-  .hover-text {
-    position: absolute;
-    box-sizing: border-box;
-    content: attr(data-text);
-    color: var(--animation-color);
-    width: 0%;
-    inset: 0;
-    border-right: var(--border-right) solid var(--animation-color);
-    overflow: hidden;
-    transition: 0.5s;
-    -webkit-text-stroke: 1px var(--animation-color);
-  }
-  /* hover */
-  .button:hover .hover-text {
-    width: 100%;
-    filter: drop-shadow(0 0 23px var(--animation-color));
+    line-height: 22px;
+    margin-bottom: 2%;
   }
 }
 
-@media (min-width: 1200px) {
-  .about-me {
-    padding: 0 12% 0 12%;
+/*Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .textWrapper {
+    width: 48vw;
+  }
+
+  .titleh2 {
+    font-size: 3.6rem;
+  }
+  .textWrapper p {
+    font-size: 2.8vmin;
+    line-height: 30px;
+    margin-bottom: 3%;
+  }
+}
+
+/* Laptops */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .contentCard {
+    margin-top: 12vmin;
+  }
+  .textWrapper {
+    width: 42vw;
+  }
+
+  .titleh2 {
+    font-size: 2rem;
+  }
+  .textWrapper p {
+    font-size: 2.8vmin;
+    line-height: 26px;
+    margin-bottom: 3%;
   }
 }

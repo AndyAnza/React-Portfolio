@@ -1,0 +1,59 @@
+/* === removing default button style ===*/
+.greenButton {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  padding-right: 5%;
+}
+
+/* button styling */
+.greenButton {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #37ff8b;
+  --fs-size: 1.5em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.greenButton:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .greenButton {
+    --fs-size: 0.9em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .greenButton {
+    --fs-size: 1.4em;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .greenButton {
+    --fs-size: 1.2em;
+  }
+}
