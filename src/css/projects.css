@@ -106,12 +106,11 @@
   }
 
   .swiper {
-    width: 90vw;
+    width: 65vh;
     height: 55vh;
   }
 
   .projectCard {
-    width: 90vw;
     height: 55vh;
   }
 
@@ -145,11 +144,12 @@
   }
 
   .swiper {
-    width: 70vh;
+    width: 70vw;
     height: 52vh;
   }
 
   .projectCard {
+    width: 70vw;
     height: 52vh;
   }
 
