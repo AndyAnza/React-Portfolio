@@ -17,47 +17,79 @@
   margin: 1.5rem 0 1.5rem 0;
 }
 
+.projectsSectionDescription {
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: 1.5rem;
+}
+
 .projectCard {
   height: 55vh;
 }
 
-.projects-description {
-  position: relative;
-  font-size: 2.6vmin;
-  line-height: 32px;
+.cardMedia {
+  object-fit: cover;
+  height: 26vh;
+}
+
+.projectTitle {
+  height: 3vh;
+}
+
+.cardContent {
+  height: 16vh;
+  overflow: auto;
+}
+.projectDescription {
   margin-bottom: 1%;
 }
 
-.cardMedia {
-  object-fit: cover;
-  height: 30vh;
+.cardActions {
+  height: 3vh;
 }
-
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .projects-container h2 {
     font-size: 2rem;
     margin: 0 0 0 0;
   }
 
-  .projects-description {
+  .projectsSectionDescription {
     font-size: 1rem;
     line-height: 20px;
-    text-align: center;
     width: 90%;
-    margin-bottom: 14px;
+    padding-bottom: 2%;
   }
 
   .swiper {
     width: 43vh;
-    height: 64vh;
+    height: 65vh;
   }
 
   .projectCard {
-    height: 64vh;
+    height: 65vh;
   }
 
   .cardMedia {
     height: 18vh;
+  }
+
+  .projectTitle {
+    height: 3vh;
+  }
+
+  .cardContent {
+    height: 33vh;
+    overflow: auto;
+  }
+
+  .projectDescription {
+    font-size: 1rem;
+    line-height: 20px;
+    margin-bottom: 14px;
+  }
+
+  .cardActions {
+    height: 1vh;
   }
 }
 
@@ -67,32 +99,48 @@
     margin: 0 0 0 0;
   }
 
-  .projects-description {
+  .projectsSectionDescription {
     font-size: 1.2rem;
+    overflow: auto;
+    padding-bottom: 1%;
   }
 
   .swiper {
-    width: 70vh;
-    height: 55vh;
+    width: 60vh;
+    height: 48vh;
   }
 
-  .card {
-    height: 55vh;
+  .projectCard {
+    height: 48vh;
   }
 
   .cardMedia {
-    height: 20vh;
+    height: 17vh;
+  }
+
+  .projectTitle {
+    height: 3vh;
+  }
+
+  .cardContent {
+    height: 17vh;
+    overflow: auto;
+  }
+
+  .cardActions {
+    height: 1vh;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .projects-container h2 {
     font-size: 2.1rem;
     margin: 0 0 0 0;
   }
 
-  .projects-description {
+  .projectsSectionDescription {
     font-size: 1.2rem;
+    overflow: auto;
   }
 
   .swiper {
@@ -100,34 +148,24 @@
     height: 52vh;
   }
 
-  .card {
+  .projectCard {
     height: 52vh;
   }
 
   .cardMedia {
     height: 18vh;
   }
-}
 
-@media only screen and (min-width: 1440px) {
-  .projects-container h2 {
-    font-size: 3rem;
+  .projectTitle {
+    height: 3vh;
   }
 
-  .projects-description {
-    font-size: 1.5rem;
+  .cardContent {
+    height: 19vh;
+    overflow: auto;
   }
 
-  .swiper {
-    width: 70vh;
-    height: 56vh;
-  }
-
-  .card {
-    height: 56vh;
-  }
-
-  .cardMedia {
-    height: 30vh;
+  .cardActions {
+    height: 1vh;
   }
 }

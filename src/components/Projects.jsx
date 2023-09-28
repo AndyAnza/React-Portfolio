@@ -24,7 +24,7 @@ const projects = [
     url: "https://profinder-dev.herokuapp.com",
     img: profinder,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     technologies: [
       "React",
       "GraphQL",
@@ -82,7 +82,7 @@ const Cards = () => {
       <h2 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent">
         Projects
       </h2>
-      <p className="text-gray-300 projects-description">
+      <p className="text-gray-300 projectsSectionDescription">
         Check out all the projects I've been working on on my{" "}
         <a
           href="https://github.com/AndyAnza"
@@ -121,31 +121,34 @@ const Cards = () => {
                 >
                   {project.name}
                 </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  className="projectDescription"
-                >
-                  {project.description}
-                </Typography>
-                <ul
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    marginTop: "4px",
-                  }}
-                >
-                  {project.technologies.map((technology, techIndex) => (
-                    <li
-                      style={{ fontSize: "0.9rem", marginRight: "0.5rem" }}
-                      key={techIndex}
-                    >
-                      {`${technology}`}
-                    </li>
-                  ))}
-                </ul>
+                <div className="cardContent">
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    className="projectDescription"
+                  >
+                    {project.description}
+                  </Typography>
+                  <ul
+                    style={{
+                      display: "flex",
+                      flexWrap: "wrap",
+                      marginTop: "4px",
+                    }}
+                  >
+                    {project.technologies.map((technology, techIndex) => (
+                      <li
+                        style={{ fontSize: "0.9rem", marginRight: "0.5rem" }}
+                        key={techIndex}
+                      >
+                        {`${technology}`}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </CardContent>
-              <CardActions>
+
+              <CardActions className="cardActions">
                 <Button
                   size="small"
                   onClick={() => {
