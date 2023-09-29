@@ -1,4 +1,4 @@
-import "../css/aboutMe.css";
+import "../css/greenButton.css";
 
 import "../css/loader.css";
 import "../css/resume.css";
@@ -14,7 +14,7 @@ function ResumeComponent() {
       <div className="container-margin flex justify-center">
         <a
           data-text="Awesome"
-          className="button"
+          className="greenButton"
           href="https://drive.google.com/uc?export=download&id=1XRB9Y1AZgoXQgVRrHEuvurnnMX2_4i7i"
           download="AndreaAnzaResume.pdf"
           onClick={() => {
