@@ -1,5 +1,5 @@
 import ProfilePic from "../assets/profilePic/profilepic.png";
-import Randombutton from "./GreenButton";
+import GreenButton from "./GreenButton";
 import "../css/aboutMe.css";
 import "../css/greenButton.css";
 
@@ -30,10 +30,15 @@ export default function AboutMe() {
           creating seamless web experiences.
         </p>
         <p className=" text-gray-300">
-          Explore my portfolio and let's connect to create web solutions.
+          Explore my portfolio and lets connect to create web solutions.
         </p>
-        <Randombutton url={links[0].url} text={links[0].text} />
-        <Randombutton url={links[1].url} text={links[1].text} />
+        <GreenButton
+          url={links[0].url}
+          text={links[0].text}
+          target="_blank"
+          rel="noreferrer"
+        />
+        <GreenButton url={links[1].url} text={links[1].text} />
       </div>
       <img src={ProfilePic} alt="Profile Picture" className="profilePicture" />
     </div>

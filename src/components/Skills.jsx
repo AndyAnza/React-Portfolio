@@ -2,6 +2,7 @@ import "../css/skills.css";
 import html from "../assets/skillsIcons/html.png";
 import css from "../assets/skillsIcons/css.png";
 import javascript from "../assets/skillsIcons/javascript.png";
+import typescript from "../assets/skillsIcons/typescript.png";
 import node from "../assets/skillsIcons/node.png";
 import express from "../assets/skillsIcons/express.png";
 import react from "../assets/skillsIcons/react.png";
@@ -11,11 +12,13 @@ import sql from "../assets/skillsIcons/sql.png";
 import mongoDB from "../assets/skillsIcons/mongoDB.png";
 import git from "../assets/skillsIcons/git.png";
 import windows from "../assets/skillsIcons/windows.png";
+import jest from "../assets/skillsIcons/jest.png";
 
 const technologies = [
   { name: "HTML", image: html },
   { name: "CSS", image: css },
   { name: "JavaScript", image: javascript },
+  { name: "TypeScript", image: typescript },
   { name: "Node.js", image: node },
   { name: "Express.js", image: express },
   { name: "React", image: react },
@@ -25,6 +28,7 @@ const technologies = [
   { name: "MongoDB", image: mongoDB },
   { name: "Git", image: git },
   { name: "Windows", image: windows },
+  { name: "Jest", image: jest },
 ];
 
 function Skills() {

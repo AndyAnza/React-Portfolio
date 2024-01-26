@@ -2,6 +2,7 @@ import profinder from "../assets/projectsImages/profinder.png";
 import localeats from "../assets/projectsImages/localeats.png";
 import techblog from "../assets/projectsImages/techblog.png";
 import weatherforecast from "../assets/projectsImages/weatherforecast.png";
+import pokedex from "../assets/projectsImages/pokedex.png";
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -37,6 +38,7 @@ const projects = [
       "HTML",
     ],
     repo: "https://github.com/AndyAnza/profinder",
+    aspectratio: 523 / 311,
   },
   {
     name: "localeats",
@@ -55,6 +57,7 @@ const projects = [
       "Bcrypt",
     ],
     repo: "https://github.com/AndyAnza/localeats",
+    aspectratio: 1436 / 875,
   },
   {
     name: "Tech-Blog",
@@ -64,6 +67,7 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     technologies: ["JavaScript", "Node", "Express", "Handlebars", "Sequelize"],
     repo: "https://github.com/AndyAnza/Tech-Blog-C16",
+    aspectratio: 1783 / 924,
   },
   {
     name: "Weather-Forecast",
@@ -73,6 +77,17 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     technologies: ["JavaScript", "HTML", "CSS", "Node", "Express"],
     repo: "https://github.com/AndyAnza/Weather-Forecast",
+    aspectratio: 2327 / 1342,
+  },
+  {
+    name: "PokeDex",
+    url: "https://pokedex-andyanza.vercel.app/",
+    img: pokedex,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    technologies: ["JavaScript", "HTML", "CSS"],
+    repo: "https://github.com/AndyAnza/PokeDex",
+    aspectratio: 1436 / 875,
   },
 ];
 
@@ -111,6 +126,7 @@ const Cards = () => {
                 alt="project"
                 className="cardMedia"
                 image={project.img}
+                aspectratio={project.aspectratio}
               />
               <CardContent>
                 <Typography

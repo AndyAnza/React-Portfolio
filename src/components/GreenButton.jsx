@@ -1,6 +1,6 @@
 import "../css/greenButton.css";
 
-function Randombutton({ url, text }) {
+function GreenButton({ url, text }) {
   return (
     <a data-text="Awesome" className="greenButton" href={url}>
       <span className="actual-text">&nbsp;{text}&nbsp;</span>
@@ -11,4 +11,4 @@ function Randombutton({ url, text }) {
   );
 }
 
-export default Randombutton;
+export default GreenButton;
