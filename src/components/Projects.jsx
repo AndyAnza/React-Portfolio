@@ -18,6 +18,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import '../css/projects.css';
+import ArrowButton from './ArrowButton';
 
 const projects = [
   {
@@ -101,6 +102,7 @@ const Cards = () => {
         Check out all the projects I've been working on on my{' '}
         <a
           href='https://github.com/AndyAnza'
+          target='_blank'
           className='text-white transition duration-150 ease-in-out delay-75 hover:text-purple-500'
         >
           Github Page
@@ -165,21 +167,8 @@ const Cards = () => {
               </CardContent>
 
               <CardActions className='cardActions'>
-                <Button
-                  size='small'
-                  onClick={() => {
-                    window.location.href = project.url;
-                  }}
-                >
-                  Visit Website
-                </Button>
-                <Button
-                  onClick={() => {
-                    window.location.href = project.repo;
-                  }}
-                >
-                  Github Repo
-                </Button>
+                <ArrowButton href={project.url} title={'Website'}></ArrowButton>
+                <ArrowButton href={project.repo} title={'Repo'}></ArrowButton>
               </CardActions>
             </Card>
           </SwiperSlide>
