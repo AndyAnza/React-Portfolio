@@ -15,7 +15,7 @@ function ResumeComponent() {
         <a
           data-text='Awesome'
           className='greenButton'
-          href='https://drive.google.com/uc?export=download&id=1ISv5B0ZBYQNAa6vVjr52ESHVqg4-W492'
+          href='https://drive.google.com/uc?export=download&id=1tNw7er9v5kk8KhIBcnLus4gtNrf6pBhA'
           download='AndreaAnzaResume.pdf'
           onClick={() => {
             toast.add({
@@ -63,7 +63,7 @@ function ResumeComponent() {
 
       <div className='resume-container'>
         <iframe
-          src='https://drive.google.com/file/d/1ISv5B0ZBYQNAa6vVjr52ESHVqg4-W492/preview'
+          src='https://drive.google.com/file/d/1tNw7er9v5kk8KhIBcnLus4gtNrf6pBhA/preview'
           width='70%'
           height='700'
           onLoad={() => setIframeLoaded(true)}
