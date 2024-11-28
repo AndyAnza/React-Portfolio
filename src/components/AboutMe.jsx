@@ -34,8 +34,9 @@ export default function AboutMe() {
             Explore my portfolio and lets connect to create web solutions.
           </p>
           <div style={{ display: 'flex' }}>
-            <GreenButton url={links[0].url} text={links[0].text} />
-            <GreenButton url={links[1].url} text={links[1].text} />
+            {
+              links.map((link, index)=>  <GreenButton key={index} url={link.url} text={link.text} />)
+            }
           </div>
         </div>
 
@@ -43,6 +44,7 @@ export default function AboutMe() {
           src={ProfilePic}
           alt='Profile Picture'
           className='profilePicture'
+          loading='lazy'
         />
       </div>
     </>

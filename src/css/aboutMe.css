@@ -21,6 +21,11 @@
   margin-bottom: 2%;
 }
 
+.profilePicture {
+  width: auto;
+  height: auto;
+}
+
 /*Smartphones*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .contentCard {
