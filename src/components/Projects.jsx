@@ -1,8 +1,8 @@
-import profinder from '../assets/projectsImages/profinder.png';
-import localeats from '../assets/projectsImages/localeats.png';
-import techblog from '../assets/projectsImages/techblog.png';
-import weatherforecast from '../assets/projectsImages/weatherforecast.png';
-import pokedex from '../assets/projectsImages/pokedex.png';
+import profinder from '../assets/projectsImages/profinder.avif';
+import localeats from '../assets/projectsImages/localeats.avif';
+import techblog from '../assets/projectsImages/techblog.avif';
+import weatherforecast from '../assets/projectsImages/weatherforecast.avif';
+import pokedex from '../assets/projectsImages/pokedex.avif';
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';

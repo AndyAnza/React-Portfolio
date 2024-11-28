@@ -1,4 +1,4 @@
-import ProfilePic from '../assets/profilePic/profilepic1.png';
+import ProfilePic from '../assets/profilePic/profilepic1.avif';
 import GreenButton from './GreenButton';
 import '../css/aboutMe.css';
 import '../css/greenButton.css';
