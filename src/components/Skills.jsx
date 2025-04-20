@@ -1,7 +1,7 @@
 // import '../css/skills.css';
 export default function Skills({ description, skills }) {
   return (
-    <div className='tech-main-container sm: w-[90vw] m-6 lg: w-[50vw] '>
+    <div className='tech-main-container w-[95vw] m-6 lg:w-[50vw]'>
       <h2
         className='lg: bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent text-4xl text-center m-4'
         id='portfolio'
