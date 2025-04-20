@@ -1,55 +1,26 @@
-import "../css/skills.css";
-import html from "../assets/skillsIcons/html.png";
-import css from "../assets/skillsIcons/css.png";
-import javascript from "../assets/skillsIcons/javascript.png";
-import typescript from "../assets/skillsIcons/typescript.png";
-import node from "../assets/skillsIcons/node.png";
-import express from "../assets/skillsIcons/express.png";
-import react from "../assets/skillsIcons/react.png";
-import tailwind from "../assets/skillsIcons/tailwind.png";
-import bootstrap from "../assets/skillsIcons/bootstrap.png";
-import sql from "../assets/skillsIcons/sql.png";
-import mongoDB from "../assets/skillsIcons/mongoDB.png";
-import git from "../assets/skillsIcons/git.png";
-import windows from "../assets/skillsIcons/windows.png";
-import jest from "../assets/skillsIcons/jest.png";
-
-const technologies = [
-  { name: "HTML", image: html },
-  { name: "CSS", image: css },
-  { name: "JavaScript", image: javascript },
-  { name: "TypeScript", image: typescript },
-  { name: "Node.js", image: node },
-  { name: "Express.js", image: express },
-  { name: "React", image: react },
-  { name: "Tailwind", image: tailwind },
-  { name: "Bootstrap", image: bootstrap },
-  { name: "SQL", image: sql },
-  { name: "MongoDB", image: mongoDB },
-  { name: "Git", image: git },
-  { name: "Windows", image: windows },
-  { name: "Jest", image: jest },
-];
-
-function Skills() {
+// import '../css/skills.css';
+export default function Skills({ description, skills }) {
   return (
-    <div className="tech-main-container">
+    <div className='tech-main-container m-6 w-[1000px] '>
       <h2
-        className="lg: bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent"
-        id="portfolio"
+        className='lg: bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent text-4xl text-center m-4'
+        id='portfolio'
       >
-        My Tech Stack
+        {description}
       </h2>
-      <div className="tech-container grid grid-cols-4">
-        {technologies.map((property) => (
-          <div key={property.name} className=" stack-btn">
-            <img src={property.image} alt={property.image} />
+      <div className='tech-container grid gap-4 grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))]  '>
+        {skills.map(skill => (
+          <div
+            key={skill.name}
+            className=' stack-btn flex h-14 items-center p-2 gap-2 bg-white rounded
+'
+          >
+            <img src={skill.image} alt={skill.image} className='h-[100%]' />
 
-            <h3>{property.name}</h3>
+            <h3>{skill.name}</h3>
           </div>
         ))}
       </div>
     </div>
   );
 }
-export default Skills;
